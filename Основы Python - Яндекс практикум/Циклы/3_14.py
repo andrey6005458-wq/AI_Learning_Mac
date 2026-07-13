@@ -1,7 +1,14 @@
-a = int(input())
-b = 2.5
-c = 38
+number = int(input())
 
-price = 2.5 * 38
-ostatok = a - price
-print(int(ostatok))
+if number < 2:
+    print("NO")
+else:
+    count = 0
+    for divisor in range(2, int(number**0.5) + 1):
+        if number % divisor == 0:
+            count += 1
+
+    if count == 0:
+        print("YES")
+    else:
+        print("NO")
