@@ -1,9 +1,11 @@
-animal = 0
-
-while True:
-    text = input()
-    if text == "Приехали!":
-        break
-    if "зайка" in text:
-        animal += 1
-print(animal)
+number = int(input())
+x = 0
+old_number = number
+while old_number > 0:
+    x *= 10
+    x += old_number % 10
+    old_number //= 10
+if x == number:
+    print("YES")
+else:
+    print("NO")
