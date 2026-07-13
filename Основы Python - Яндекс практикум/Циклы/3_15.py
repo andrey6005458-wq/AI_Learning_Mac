@@ -2,7 +2,6 @@ n = int(input())
 animal = 0
 
 for i in range(n):
-    text = input()
-    if "зайка" in text:
+    if "зайка" in input():
         animal += 1
 print(animal)
