@@ -7,7 +7,3 @@ for i in range(n):
         sum_digits += x % 10
         x //= 10
 print(sum_digits)
-
-a = 8 + 5 + 7 + 3 + 3 + 9 + 3 + 1 + 1 + 3 + 9 + 2 + 3
-
-print(a)
