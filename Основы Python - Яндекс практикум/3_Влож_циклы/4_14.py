@@ -1,11 +1,13 @@
 h = int(input())
 m = int(input())
 
+width = len(str(h * m))
+
 for i in range(h):
     for j in range(m):
-        number = i + j * h + 1
-        if j == 0:
-            print(number, end="")
+        if i % 2 == 0:
+            number = i * m + j + 1
         else:
-            print("", number, end="")
+            number = i * m + (m - j)
+        print(f"{number:>{width}}", end=" ")
     print()
