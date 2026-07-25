@@ -1,3 +1,3 @@
-countries_and_capitals = {"Россия": "Москва", "США": "Вашингтон", "Франция": "Париж"}
-countries_and_capitals["Сербия"] = "Белград"
-print(countries_and_capitals)
+names_marks = {"Андрей": 5, "Кристина": 4, "Дмитрий": 5, "Владислав": 3, "Максим": 5}
+
+print(names_marks.keys)
