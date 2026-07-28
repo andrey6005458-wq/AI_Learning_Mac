@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Middle ML Engineer · Полный Roadmap 2026 (RU)</title>
+    <title>Полный Roadmap · Python → ML → AI (2026)</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
@@ -378,160 +378,148 @@
     (function() {
         const modules = [{
             id: 'm1',
-            title: '📘 1. Python — полный курс (с нуля)',
+            title: '📘 1. Python — полный курс (по Яндекс Практикуму)',
             meta: '1.5–2 мес',
             topics: [
-                { id: 't1', name: '1.1 Установка и настройка среды', sub: 'Python, VS Code, виртуальное окружение', resources: [{ label: 'python.org', url: 'https://python.org' }] },
-                { id: 't2', name: '1.2 Переменные, типы данных', sub: 'int, float, str, bool', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }, { label: 'selfedu (YouTube)', url: 'https://www.youtube.com/playlist?list=PLA0M1Bcd0w8zO3KuBwqIEj1QlP1aVw1GZ' }] },
-                { id: 't3', name: '1.3 Ввод и вывод (input / print)', sub: 'f-строки', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't4', name: '1.4 Арифметические операции', sub: '+ - * / // % **', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't5', name: '1.5 Форматирование строк', sub: 'f-string, :02d', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't6', name: '2.1 Ввод/вывод, операции с числами, строками', sub: 'повторение', resources: [{ label: 'Stepik', url: 'https://stepik.org/course/67/' }] },
-                { id: 't7', name: '2.2 Условный оператор', sub: 'if/elif/else', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't8', name: '2.3 Сравнение строк', sub: '==, !=, <, >', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't9', name: '2.4 Match-case', sub: 'новый синтаксис', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't10', name: '3.1 Цикл for', sub: 'range, итерация', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't11', name: '3.2 Цикл while', sub: 'условие выхода', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't12', name: '3.3 Списки (list)', sub: 'методы: append, remove, sort', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't13', name: '3.4 Кортежи (tuple)', sub: 'неизменяемые', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't14', name: '3.5 Словари (dict)', sub: 'ключ-значение', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't15', name: '3.6 Множества (set)', sub: 'уникальные элементы', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't16', name: '4.1 Создание функций (def)', sub: 'аргументы, return', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't17', name: '4.2 Области видимости', sub: 'global, local', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't18', name: '4.3 Модули и импорт', sub: 'import, from', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't19', name: '5.1 Классы, поля и методы', sub: 'ООП', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't20', name: '5.2 Волшебные методы, наследование', sub: 'магия Python', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't21', name: '5.3 Исключения: try/except/else/finally', sub: 'обработка ошибок', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/python-basics' }] },
-                { id: 't22', name: '6.1 Модули math и numpy', sub: 'математика и массивы', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/python' }] },
-                { id: 't23', name: '6.2 Модуль pandas', sub: 'таблицы и анализ данных', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/pandas' }] },
-                { id: 't24', name: '6.3 Модуль requests', sub: 'HTTP-запросы к API', resources: [{ label: 'Pythonru', url: 'https://pythonru.com/uroki/modul-requests-v-python' }] },
-                { id: 't25', name: '⭐ 6.4 Итоговый проект', sub: 'сборка всего изученного', resources: [{ label: 'GitHub', url: 'https://github.com/' }] }
+                { id: 't1', name: '1.1 Введение', sub: 'установка, переменные, типы данных, ввод/вывод, арифметика, форматирование', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't2', name: '1.2 Условный оператор', sub: 'if/elif/else, сравнение строк, match-case', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't3', name: '1.3 Циклы', sub: 'for, while, вложенные циклы', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't4', name: '1.4 Строки, списки, кортежи', sub: 'методы строк и списков, срезы, кортежи', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't5', name: '1.5 Словари и множества', sub: 'методы словарей, множества, операции', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't6', name: '1.6 Списочные выражения', sub: 'list comprehensions, генераторы', resources: [{ label: 'Pythonru', url: 'https://pythonru.com/uroki/list-comprehension' }] },
+                { id: 't7', name: '1.7 Встроенные функции', sub: 'enumerate(), zip(), itertools', resources: [{ label: 'Docs Python', url: 'https://docs.python.org/3/library/itertools.html' }] },
+                { id: 't8', name: '1.8 Работа с файлами', sub: 'open(), with, JSON', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/478620/' }] },
+                { id: 't9', name: '1.9 Функции', sub: 'def, аргументы, return, области видимости', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't10', name: '1.10 ООП', sub: 'классы, объекты, методы, наследование', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't11', name: '1.11 Исключения', sub: 'try/except/else/finally', resources: [{ label: 'Яндекс Хендбук', url: 'https://education.yandex.ru/handbook/python' }] },
+                { id: 't12', name: '1.12 Модули', sub: 'import, math, random, datetime', resources: [{ label: 'Docs Python', url: 'https://docs.python.org/3/library/' }] },
+                { id: 't13', name: '⭐ 1.13 Итоговый проект', sub: 'сборка всего изученного', resources: [{ label: 'GitHub', url: 'https://github.com/' }] }
             ]
         }, {
             id: 'm2',
             title: '🗄️ 2. SQL — работа с базами данных',
             meta: '3–4 нед',
             topics: [
-                { id: 't26', name: '2.1 SELECT, FROM, WHERE', sub: 'выборка данных', resources: [{ label: 'Хекслет', url: 'https://ru.hexlet.io/courses/sql-basics' }] },
-                { id: 't27', name: '2.2 JOIN (INNER, LEFT, RIGHT)', sub: 'объединение таблиц', resources: [{ label: 'SQL Academy', url: 'https://sql-academy.org/ru' }] },
-                { id: 't28', name: '2.3 GROUP BY, HAVING, агрегатные функции', sub: 'группировка', resources: [{ label: 'SQL Academy', url: 'https://sql-academy.org/ru' }] },
-                { id: 't29', name: '2.4 Подзапросы и оконные функции', sub: 'продвинутый SQL', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/articles/1026156/' }] },
-                { id: 't30', name: '2.5 Практика: LeetCode (Easy/Medium)', sub: '20 задач', resources: [{ label: 'LeetCode', url: 'https://leetcode.com/' }] }
+                { id: 't14', name: '2.1 SELECT, FROM, WHERE', sub: 'выборка данных', resources: [{ label: 'SQL Academy', url: 'https://sql-academy.org/ru' }] },
+                { id: 't15', name: '2.2 JOIN', sub: 'INNER, LEFT, RIGHT', resources: [{ label: 'SQL Academy', url: 'https://sql-academy.org/ru' }] },
+                { id: 't16', name: '2.3 GROUP BY, HAVING', sub: 'агрегатные функции', resources: [{ label: 'SQL Academy', url: 'https://sql-academy.org/ru' }] },
+                { id: 't17', name: '2.4 Подзапросы и оконные функции', sub: 'продвинутый SQL', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/articles/1026156/' }] },
+                { id: 't18', name: '2.5 Практика: LeetCode', sub: '20 задач (Easy/Medium)', resources: [{ label: 'LeetCode', url: 'https://leetcode.com/' }] }
             ]
         }, {
             id: 'm3',
             title: '📐 3. Математика для ML',
             meta: '3–4 нед',
             topics: [
-                { id: 't31', name: '3.1 Линейная алгебра: векторы и матрицы', sub: '3Blue1Brown', resources: [{ label: 'karpov.courses', url: 'https://karpov.courses/math-for-ds' }] },
-                { id: 't32', name: '3.2 Статистика и вероятность', sub: 'StatQuest', resources: [{ label: 'GitHub ВШЭ', url: 'https://github.com/FUlyankin/yet_another_math_for_DS' }] },
-                { id: 't33', name: '3.3 Статистические тесты (t-test, χ²)', sub: 'проверка гипотез', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/517662/' }] },
-                { id: 't34', name: '⭐ 3.4 Проект: математический разбор датасета', sub: 'описательная статистика', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/datasets' }] }
+                { id: 't19', name: '3.1 Линейная алгебра', sub: 'векторы, матрицы', resources: [{ label: 'karpov.courses', url: 'https://karpov.courses/math-for-ds' }] },
+                { id: 't20', name: '3.2 Статистика и вероятность', sub: 'StatQuest', resources: [{ label: 'YouTube', url: 'https://www.youtube.com/@statquest' }] },
+                { id: 't21', name: '3.3 Статистические тесты', sub: 't-test, χ²', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/517662/' }] },
+                { id: 't22', name: '⭐ 3.4 Проект', sub: 'математический разбор датасета', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/datasets' }] }
             ]
         }, {
             id: 'm4',
             title: '📊 4. Pandas + NumPy + Визуализация',
             meta: '3–4 нед',
             topics: [
-                { id: 't35', name: '4.1 NumPy: массивы и операции', sub: 'база для данных', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/python' }] },
-                { id: 't36', name: '4.2 Pandas: Series и DataFrame', sub: 'таблицы данных', resources: [{ label: 'Bilibili (видео)', url: 'https://www.bilibili.com/video/BV1XsKA65Ecn/' }] },
-                { id: 't37', name: '4.3 Очистка данных в Pandas', sub: 'dropna, fillna, duplicates', resources: [{ label: 'Bilibili (видео)', url: 'https://www.bilibili.com/video/BV1XsKA65Ecn/' }] },
-                { id: 't38', name: '4.4 Группировки и сводные таблицы', sub: 'groupby, pivot_table', resources: [{ label: 'Bilibili (видео)', url: 'https://www.bilibili.com/video/BV1XsKA65Ecn/' }] },
-                { id: 't39', name: '4.5 Matplotlib: базовые графики', sub: 'line, scatter, hist', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/data-visualization' }] },
-                { id: 't40', name: '4.6 Seaborn: статистические графики', sub: 'pairplot, boxplot', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/data-visualization' }] },
-                { id: 't41', name: '⭐ 4.7 Проект: EDA на данных о домах', sub: 'анализ + визуализация', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] }
+                { id: 't23', name: '4.1 NumPy', sub: 'массивы и операции', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/python' }] },
+                { id: 't24', name: '4.2 Pandas', sub: 'Series и DataFrame', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/pandas' }] },
+                { id: 't25', name: '4.3 Очистка данных', sub: 'dropna, fillna, duplicates', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/pandas' }] },
+                { id: 't26', name: '4.4 Группировки и сводные таблицы', sub: 'groupby, pivot_table', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/pandas' }] },
+                { id: 't27', name: '4.5 Matplotlib', sub: 'базовые графики', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/data-visualization' }] },
+                { id: 't28', name: '4.6 Seaborn', sub: 'статистические графики', resources: [{ label: 'Kaggle Learn', url: 'https://www.kaggle.com/learn/data-visualization' }] },
+                { id: 't29', name: '⭐ 4.7 Проект: EDA', sub: 'анализ данных о домах', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] }
             ]
         }, {
             id: 'm5',
             title: '🤖 5. Машинное обучение (полный курс)',
             meta: '1.5–2 мес',
             topics: [
-                { id: 't42', name: '5.1 Введение в ML', sub: 'курс ВШЭ на Coursera', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
-                { id: 't43', name: '5.2 Линейная регрессия (scikit-learn)', sub: 'предсказание чисел', resources: [{ label: 'Google ML Crash', url: 'https://developers.google.com/machine-learning/crash-course' }] },
-                { id: 't44', name: '5.3 Логистическая регрессия', sub: 'бинарная классификация', resources: [{ label: 'mlcourse.ai (рус.)', url: 'https://mlcourse.ai/book/topic04/topic04_intro.html' }] },
-                { id: 't45', name: '5.4 Деревья решений и Random Forest', sub: 'ансамблевые методы', resources: [{ label: 'Лекция (МФТИ)', url: 'https://www.youtube.com/watch?v=2k4ZR8LqMqA' }] },
-                { id: 't46', name: '5.5 Градиентный бустинг', sub: 'CatBoost / XGBoost', resources: [{ label: 'CatBoost', url: 'https://catboost.ai/ru/docs/' }] },
-                { id: 't47', name: '5.6 Кластеризация (k-Means, DBScan)', sub: 'обучение без учителя', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/318666/' }] },
-                { id: 't48', name: '5.7 Отбор признаков и SHAP', sub: 'интерпретация моделей', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/340728/' }] },
-                { id: 't49', name: '5.8 Метрики и кросс-валидация', sub: 'оценка качества', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/517662/' }] },
-                { id: 't50', name: '⭐ 5.9 Проект: Titanic (ML)', sub: 'предсказание выживаемости', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/c/titanic' }] }
+                { id: 't30', name: '5.1 Введение в ML', sub: 'основные концепции', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't31', name: '5.2 Линейная регрессия', sub: 'scikit-learn', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't32', name: '5.3 Логистическая регрессия', sub: 'бинарная классификация', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't33', name: '5.4 Деревья решений и Random Forest', sub: 'ансамбли', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't34', name: '5.5 Градиентный бустинг', sub: 'CatBoost, XGBoost', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't35', name: '5.6 Кластеризация', sub: 'k-Means, DBScan', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't36', name: '5.7 Отбор признаков и SHAP', sub: 'интерпретация моделей', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't37', name: '5.8 Метрики и кросс-валидация', sub: 'оценка качества', resources: [{ label: 'VK Education', url: 'https://education.vk.company/' }] },
+                { id: 't38', name: '⭐ 5.9 Проект: Titanic', sub: 'предсказание выживаемости', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/c/titanic' }] }
             ]
         }, {
             id: 'm6',
             title: '🧠 6. Нейросети и Deep Learning',
             meta: '3–4 нед',
             topics: [
-                { id: 't51', name: '6.1 Введение в нейросети', sub: 'курс ВШЭ', resources: [{ label: 'DLS МФТИ', url: 'https://www.dls-course.org/' }] },
-                { id: 't52', name: '6.2 Тензоры и градиенты (PyTorch)', sub: 'autograd', resources: [{ label: 'PyTorch', url: 'https://pytorch.org/tutorials/' }] },
-                { id: 't53', name: '6.3 Обучение нейросети на MNIST', sub: 'распознавание цифр', resources: [{ label: 'Stepik', url: 'https://stepik.org/course/157/' }] },
-                { id: 't54', name: '⭐ 6.4 Проект: CIFAR-10', sub: 'классификация изображений', resources: [{ label: 'CIFAR-10', url: 'https://www.cs.toronto.edu/~kriz/cifar.html' }] }
+                { id: 't39', name: '6.1 Введение в нейросети', sub: 'базовые концепции', resources: [{ label: 'DLS МФТИ', url: 'https://www.dls-course.org/' }] },
+                { id: 't40', name: '6.2 PyTorch', sub: 'тензоры, градиенты', resources: [{ label: 'DLS МФТИ', url: 'https://www.dls-course.org/' }] },
+                { id: 't41', name: '6.3 Обучение на MNIST', sub: 'распознавание цифр', resources: [{ label: 'DLS МФТИ', url: 'https://www.dls-course.org/' }] },
+                { id: 't42', name: '⭐ 6.4 Проект: CIFAR-10', sub: 'классификация изображений', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] }
             ]
         }, {
             id: 'm7',
             title: '⚙️ 7. Инженерия (Git, тесты, CI/CD)',
             meta: '2–3 нед',
             topics: [
-                { id: 't55', name: '7.1 Git: ветки, коммиты, rebase', sub: 'работа в команде', resources: [{ label: 'Git и GitLab | МИЭМ Wiki', url: 'https://eddu.pro/programming/gitlab/' }] },
-                { id: 't56', name: '7.2 Тестирование (pytest)', sub: 'модульные тесты', resources: [{ label: 'BogdanDotPy (видео)', url: 'https://www.youtube.com/watch?v=3c-iBn73dDE' }] },
-                { id: 't57', name: '7.3 CI/CD (GitHub Actions)', sub: 'автоматизация', resources: [{ label: 'Яндекс Практикум', url: 'https://academy-market.com/course/deploj-infrastruktury-po-modeli-gitops-andekspraktikum' }] },
-                { id: 't58', name: '7.4 API Design (FastAPI)', sub: 'REST, асинхронность', resources: [{ label: 'FastAPI', url: 'https://fastapi.tiangolo.com/ru/' }] }
+                { id: 't43', name: '7.1 Git', sub: 'ветки, коммиты, rebase', resources: [{ label: 'Git и GitLab Wiki', url: 'https://eddu.pro/programming/gitlab/' }] },
+                { id: 't44', name: '7.2 Тестирование (pytest)', sub: 'модульные тесты', resources: [{ label: 'Git и GitLab Wiki', url: 'https://eddu.pro/programming/gitlab/' }] },
+                { id: 't45', name: '7.3 CI/CD', sub: 'GitHub Actions', resources: [{ label: 'Git и GitLab Wiki', url: 'https://eddu.pro/programming/gitlab/' }] },
+                { id: 't46', name: '7.4 API Design', sub: 'FastAPI, REST', resources: [{ label: 'Git и GitLab Wiki', url: 'https://eddu.pro/programming/gitlab/' }] }
             ]
         }, {
             id: 'm8',
             title: '🐳 8. MLOps Lite',
             meta: '2–3 нед',
             topics: [
-                { id: 't59', name: '8.1 Docker: контейнеризация', sub: 'BuildKit, multi-stage', resources: [{ label: 'МФТИ (курс)', url: 'https://eddu.pro/programming/gitlab/' }] },
-                { id: 't60', name: '8.2 MLflow: отслеживание экспериментов', sub: 'управление моделями', resources: [{ label: 'MLflow', url: 'https://mlflow.org/' }] }
+                { id: 't47', name: '8.1 Docker', sub: 'контейнеризация', resources: [{ label: 'МФТИ (курс)', url: 'https://eddu.pro/programming/gitlab/' }] },
+                { id: 't48', name: '8.2 MLflow', sub: 'отслеживание экспериментов', resources: [{ label: 'МФТИ (курс)', url: 'https://eddu.pro/programming/gitlab/' }] }
             ]
         }, {
             id: 'm9',
             title: '🌐 9. Практический AI-стек (RAG, LLM)',
             meta: '2–3 нед',
             topics: [
-                { id: 't61', name: '9.1 RAG-системы и LangChain', sub: 'Retrieval-Augmented Generation', resources: [{ label: 'GitHub роадмап (раздел 11)', url: 'https://github.com/justxor/pythonroamap2026' }] },
-                { id: 't62', name: '9.2 Векторные базы данных', sub: 'Pinecone, Chroma', resources: [{ label: 'GitHub роадмап (раздел 11)', url: 'https://github.com/justxor/pythonroamap2026' }] },
-                { id: 't63', name: '9.3 Промпт-инжиниринг', sub: 'работа с LLM', resources: [{ label: 'Тинькофф Журнал', url: 'https://journal.tinkoff.ru/neural-networks-simple/' }] }
+                { id: 't49', name: '9.1 RAG и LangChain', sub: 'Retrieval-Augmented Generation', resources: [{ label: 'GitHub роадмап', url: 'https://github.com/justxor/pythonroamap2026' }] },
+                { id: 't50', name: '9.2 Векторные БД', sub: 'Pinecone, Chroma', resources: [{ label: 'GitHub роадмап', url: 'https://github.com/justxor/pythonroamap2026' }] },
+                { id: 't51', name: '9.3 Промпт-инжиниринг', sub: 'работа с LLM', resources: [{ label: 'Тинькофф Журнал', url: 'https://journal.tinkoff.ru/neural-networks-simple/' }] }
             ]
         }, {
             id: 'm10',
             title: '☁️ 10. Архитектура данных и облака',
             meta: '3–4 нед',
             topics: [
-                { id: 't64', name: '10.1 Data Modeling', sub: 'проектирование структур данных', resources: [{ label: 'AIDive', url: 'https://aidive.org/blog/ai-courses-ru' }] },
-                { id: 't65', name: '10.2 Облачные платформы', sub: 'AWS/GCP/Azure', resources: [{ label: 'AIDive', url: 'https://aidive.org/blog/ai-courses-ru' }] }
+                { id: 't52', name: '10.1 Data Modeling', sub: 'проектирование структур данных', resources: [{ label: 'AIDive', url: 'https://aidive.org/blog/ai-courses-ru' }] },
+                { id: 't53', name: '10.2 Облачные платформы', sub: 'AWS/GCP/Azure', resources: [{ label: 'AIDive', url: 'https://aidive.org/blog/ai-courses-ru' }] }
             ]
         }, {
             id: 'm11',
             title: '💼 11. Проекты',
             meta: '1.5–2 мес',
             topics: [
-                { id: 't66', name: '⭐ 11.1 Проект №1: EDA на реальных данных', sub: 'анализ и визуализация', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] },
-                { id: 't67', name: '⭐ 11.2 Проект №2: ML-модель + API', sub: 'FastAPI + Docker', resources: [{ label: 'FastAPI', url: 'https://fastapi.tiangolo.com/ru/' }] },
-                { id: 't68', name: '⭐ 11.3 Проект №3: CI/CD и деплой', sub: 'GitHub Actions + облако', resources: [{ label: 'GitHub Actions', url: 'https://github.com/features/actions' }] },
-                { id: 't69', name: '⭐ 11.4 Проект №4: RAG-система', sub: 'LLM + векторная БД', resources: [{ label: 'LangChain', url: 'https://python.langchain.com/' }] },
-                { id: 't70', name: '⭐ 11.5 Проект №5: Полный ML-пайплайн', sub: 'MLflow + Airflow', resources: [{ label: 'MLflow', url: 'https://mlflow.org/' }] }
+                { id: 't54', name: '⭐ 11.1 EDA на реальных данных', sub: 'анализ и визуализация', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] },
+                { id: 't55', name: '⭐ 11.2 ML-модель + API', sub: 'FastAPI + Docker', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] },
+                { id: 't56', name: '⭐ 11.3 CI/CD и деплой', sub: 'GitHub Actions + облако', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] },
+                { id: 't57', name: '⭐ 11.4 RAG-система', sub: 'LLM + векторная БД', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] },
+                { id: 't58', name: '⭐ 11.5 Полный ML-пайплайн', sub: 'MLflow + Airflow', resources: [{ label: 'Kaggle', url: 'https://www.kaggle.com/' }] }
             ]
         }, {
             id: 'm12',
             title: '⚡ 12. MLOps (углублённо)',
             meta: '2–3 нед',
             topics: [
-                { id: 't71', name: '12.1 Оркестрация: Airflow / Prefect', sub: 'управление пайплайнами', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/493264/' }] },
-                { id: 't72', name: '12.2 Мониторинг моделей (Evidently AI)', sub: 'дрейф данных', resources: [{ label: 'Evidently', url: 'https://www.evidentlyai.com/ru/mlops-guides' }] }
+                { id: 't59', name: '12.1 Оркестрация', sub: 'Airflow, Prefect', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/493264/' }] },
+                { id: 't60', name: '12.2 Мониторинг моделей', sub: 'Evidently AI', resources: [{ label: 'Evidently AI', url: 'https://www.evidentlyai.com/ru/mlops-guides' }] }
             ]
         }, {
             id: 'm13',
             title: '🎯 13. Карьера и Soft Skills',
             meta: 'параллельно',
             topics: [
-                { id: 't73', name: '13.1 Оформление портфолио на GitHub', sub: 'README.md, проекты', resources: [{ label: 'GitHub', url: 'https://github.com/' }] },
-                { id: 't74', name: '13.2 Как составить резюме для DS', sub: 'структура и советы', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/660127/' }] },
-                { id: 't75', name: '13.3 Подготовка к собеседованиям', sub: 'типовые вопросы', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/551026/' }] }
+                { id: 't61', name: '13.1 Оформление портфолио', sub: 'GitHub, README.md', resources: [{ label: 'GitHub', url: 'https://github.com/' }] },
+                { id: 't62', name: '13.2 Как составить резюме', sub: 'структура и советы', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/660127/' }] },
+                { id: 't63', name: '13.3 Подготовка к собеседованиям', sub: 'типовые вопросы', resources: [{ label: 'Хабр', url: 'https://habr.com/ru/post/551026/' }] }
             ]
         }];
 
-        const STORAGE_KEY = 'ds_ml_ai_roadmap_progress_middle';
+        const STORAGE_KEY = 'ds_ml_ai_roadmap_complete';
 
         function loadProgress() {
             try {
